@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.wave{
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    bottom: 0;
+    z-index: -2;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 7rem;
+}
+.pic img{
+    width:600px;
+    z-index: 2;
+}
+form > img {
+    width:120px;
+}
+.pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+form {
+    width:450px;
+}
+form h3{
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+
+form input{
+    outline: none;
+    border: none;
+    
+}
+form>div>div{
+    display: flex;
+    justify-content: start; 
+    padding: 1.2rem 0;
+}
+form h4{
+    display: flex;
+    justify-content: flex-start;
+    font-family:'Poppins', sans-serif;
+}
+i{
+    color: #38d39f;
+}
+a{
+    font-size: 1.2rem;
+    font-family:'Poppins', sans-serif;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+
+}
+form>a:hover{
+    color: #38d3d9;
+    text-decoration: none;
+}
+.btn{
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif ;
+    text-transform: uppercase;
+}
+.focus{
+    color:#32be8f;
+}
+input[type="submit"]
+{
+    transition: 0.4s;
+    background: linear-gradient(to right,#32be8f,#38d39f,#22a076);
+}
+@media screen and (max-width:1400px){
+
+    .container{
+        grid-gap: 4rem;
+    }
+}
+@media screen and (max-width:1200px)
+{
+    form{
+        width:400px;
+    }
+    form h3 {
+        font-size: 1.6rem;
+    }
+    .pic img{
+        width: 500px;
+    }
+}
+@media screen and (max-width:1000px)
+{
+    
+    .pic img{
+        display: none;
+    }
+    .container{
+        grid-template-columns: 1fr;
+        transition: 0.3s;
+    }
+    .wave{
+        display: none;
+    }
+    .login-content{
+        align-items: flex-start;
+        justify-content:center;
+    }
+}
+ 
